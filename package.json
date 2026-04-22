@@ -1,0 +1,51 @@
+{
+  "name": "color-palette",
+  "displayName": "Color Palette",
+  "description": "Explorer-integrated color palette picker and saver",
+  "version": "0.0.1",
+  "publisher": "kimbabmon9356",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onView:colorPaletteExplorerView"
+  ],
+  "main": "./out/extension.js",
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "vscode:prepublish": "npm run compile"
+  },
+  "keywords": [
+    "color",
+    "palette",
+    "picker",
+    "hex",
+    "rgb"
+  ],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "id": "colorPaletteExplorerView",
+          "name": "Color Palette",
+          "type": "webview"
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@types/vscode": "^1.116.0",
+    "typescript": "^6.0.3"
+  }
+}
