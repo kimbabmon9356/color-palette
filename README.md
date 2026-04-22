@@ -20,26 +20,6 @@ A VS Code extension that provides a color picker directly inside the Explorer si
 5. Click a saved color chip to reapply it.
 6. Right-click a saved chip and choose **Delete** to remove it.
 
-## Development
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Compile:
-
-```bash
-npm run compile
-```
-
-Run extension in debug mode:
-
-1. Open this folder in VS Code.
-2. Press `F5`.
-3. In the Extension Development Host window, open **Explorer** and use **Color Palette**.
-
 ## Data Storage
 
 Saved colors are stored in VS Code extension `globalState`.
