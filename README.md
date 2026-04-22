@@ -1,36 +1,45 @@
-# Color Palette VS Code Extension
+# Color Palette
 
-Explorer 안에 Color Palette UI를 직접 렌더링하는 TypeScript 기반 확장프로그램입니다.
+A VS Code extension that provides a color picker directly inside the Explorer sidebar.
 
-## 기능
+## Features
 
-- Explorer의 Color Palette 뷰에서 바로 UI 표시 (별도 에디터 패널 없음)
-- 상단 팔레트 섹션 제거, 메인 컬러 컨트롤 패널 중심 UI
-- Hex, RGB, HSL 형식 지원
-- `+ Add` 버튼으로 현재 색상 로컬 저장
-- 저장된 색상 클릭 시 즉시 적용
-- Hex 입력란 변경 시 즉시 색상 반영
+- Sidebar-integrated color picker (no separate editor tab required)
+- HSV-based color selection with interactive controls
+- RGB and HEX input support
+- Save colors with `+ Add`
+- Click a saved color to apply it instantly
+- Right-click a saved color to delete it (`Delete` context menu)
 
-## 개발 실행
+## Usage
 
-1. 의존성 설치
+1. Open the **Explorer** view in VS Code.
+2. Find the **Color Palette** view.
+3. Pick a color using the controls or enter RGB/HEX values directly.
+4. Click **+ Add** to save the current color.
+5. Click a saved color chip to reapply it.
+6. Right-click a saved chip and choose **Delete** to remove it.
+
+## Development
+
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-2. 빌드
+Compile:
 
 ```bash
 npm run compile
 ```
 
-3. 디버그 실행
+Run extension in debug mode:
 
-- VS Code에서 현재 폴더 열기
-- `F5` 실행 (Run Extension)
-- 새 Extension Development Host 창의 Explorer에서 Color Palette 뷰 확인
+1. Open this folder in VS Code.
+2. Press `F5`.
+3. In the Extension Development Host window, open **Explorer** and use **Color Palette**.
 
-## 메모
+## Data Storage
 
-저장 색상은 VS Code extension globalState에 보관됩니다.
+Saved colors are stored in VS Code extension `globalState`.
