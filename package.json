@@ -2,7 +2,7 @@
   "name": "color-palette",
   "displayName": "Color Palette",
   "description": "Explorer-integrated color palette picker and saver",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "kimbabmon",
   "icon": "images/icon.png",
   "engines": {

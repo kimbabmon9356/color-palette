@@ -2,6 +2,8 @@
 
 A VS Code extension that provides a color picker directly inside the Explorer sidebar.
 
+![Color Palette Demo](images/demo.gif)
+
 ## Features
 
 - Sidebar-integrated color picker (no separate editor tab required)
