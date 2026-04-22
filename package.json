@@ -30,7 +30,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/kimbabmon9356/color-palette.git"
   },
   "contributes": {
     "views": {
@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@types/node": "^25.6.0",
-    "@types/vscode": "^1.116.0",
+    "@types/vscode": "^1.85.0",
     "typescript": "^6.0.3"
   }
 }
